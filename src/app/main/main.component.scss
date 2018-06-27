@@ -1,0 +1,17 @@
+.demo-box {
+    height: 100%;
+    .header {
+        display: flex;
+        background: red;
+        justify-content: space-between;
+        padding:10px 20px;
+    }
+    .container {
+        .aside {
+            background: yellow;
+        }
+        .main {
+            background: pink;
+        }
+    }
+}

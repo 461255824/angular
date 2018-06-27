@@ -1,0 +1,15 @@
+<div class="container">
+    <div class='logBox'>
+        <div>
+            用户名： <el-input [(model)]="username" placeholder="请输入内容"></el-input>
+        </div>
+        <div>
+            密码： <el-input [(model)]="password" placeholder="请输入内容"></el-input>
+        </div>
+        
+        <div class='btnBox'>
+            <el-button>取消</el-button>
+            <el-button (click)='login()' type="primary">确认</el-button>
+        </div>
+    </div>
+</div>

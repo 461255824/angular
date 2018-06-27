@@ -1,0 +1,23 @@
+<div el-container direction="vertical" class="demo-box">
+    <div el-header class='header' >Header
+      <el-button class='out' (click)='singOut()'>退出登录</el-button>
+    </div>
+    <div el-container class='container'>
+      <div el-aside width="200px" class='aside'>
+        <el-menu model="1" class="el-menu-vertical-demo">
+          <el-menu-item index="1" to="/main/dashboard"><i class="el-icon-menu"></i>DashBoard</el-menu-item>
+          <el-submenu index="1">
+                <ng-template #title>
+                  <i class="el-icon-message"></i>Carday
+                </ng-template>
+                <el-submenu index="1-4" title="客户指标">
+                  <el-menu-item index="1-4-1" to="/main/order">汇总数据</el-menu-item>
+                </el-submenu>
+              </el-submenu>
+            </el-menu>
+      </div>
+      <div el-main class='main'>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
