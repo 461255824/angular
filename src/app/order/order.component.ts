@@ -6,9 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./order.component.scss']
 })
 export class OrderComponent implements OnInit {
-
-  constructor() { }
-
+  list:any[];
+  constructor() { 
+    this.list=[1,2,3,4,5,6,7,8,9]
+  }
+  childEvent(data){
+    console.log('点击了什么',data)
+  }
   ngOnInit() {
   }
   handle(ref:any):void{

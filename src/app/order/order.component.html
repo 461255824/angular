@@ -1,3 +1,4 @@
+
 <el-table [model]="tableData" [scroll-x]="true" center="all" class='table'>
     <el-table-column model-key="name" label="姓名" width="140">
     </el-table-column>
@@ -16,3 +17,4 @@
       </ng-template>
     </el-table-column>
   </el-table>
+  <app-list [list]='list' (childEvent)='childEvent($event)' ></app-list>

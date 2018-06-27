@@ -7,8 +7,10 @@ console.log("ang",echarts)
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-
-  constructor() { }
+  title:string;
+  constructor() { 
+    this.title = 'red'
+  }
 
   ngOnInit() {
     var myChart = echarts.init(document.getElementById('charts'));
